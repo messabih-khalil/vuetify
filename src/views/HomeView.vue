@@ -1,19 +1,20 @@
 <template>
   <div>
-    <v-btn class="bg-red text-white"> Clikck </v-btn>
-
-    <v-btn flat class="bg-black">
-      <v-icon icon="mdi-delete-empty-outline"></v-icon>
-    </v-btn>
+    <NavbarComp />
   </div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
 
+import NavbarComp from "@/components/NavbarComp.vue";
 // Components
 
 export default defineComponent({
   name: "HomeView",
+
+  components: {
+    NavbarComp,
+  },
 });
 </script>
